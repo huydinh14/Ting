@@ -4,12 +4,7 @@ class SignUpController{
         res.render('signup')
     }
 
-    post(req, res, next, passport){
-            passport.authenticate('local.signup', {
-                successRedirect: '/home',
-                failureRedirect: '/signup',
-                failureFlash: true,
-            });
+    post(req, res, next){
             var username = req.body.username;
             var password = req.body.password;
             console.log("post received: %s %s", username, password);
