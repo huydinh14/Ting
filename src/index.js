@@ -57,13 +57,6 @@ app.set('views', path.join(__dirname, 'resources/views'));
 route(app);
 //--
 
-// AWS
-// let s3 = new aws.S3({
-//     region: 'us-east-1',
-//     accessKeyId: 'AKIAW2SFV6UG6FI5XHM3',
-//     secretAccessKey: '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'
-// });
-
 // s3.createBucket({
 //     Bucket: 'my-butket-from-sdk',
 // }, (error, success) => {
